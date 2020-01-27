@@ -1,0 +1,18 @@
+version = 1
+
+test_patterns = [
+  "tests/**",
+  "test_utils/**"
+]
+
+exclude_patterns = [
+  "vendor/**"
+]
+
+[[analyzers]]
+name = "go"
+enabled = true
+
+  [analyzers.meta]
+  import_path = "github.com/replit/prybar"
+  dependencies_vendored = true
